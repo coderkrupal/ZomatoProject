@@ -10,5 +10,71 @@
      height: 70vh;
      background-repeat: no-repeat;
      background-position: center;
-     
 }
+  
+.navbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+  .navbar .nav_text{
+     font-size: 15px;
+     text-transform: capitalize;
+     color: white;
+     font-weight: 300;
+     padding: 16px 48px;
+  }
+
+    .nav_parts a{
+      margin-right: 15px;
+      padding: 16px;
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+      text-transform: capitalize;
+  }
+
+   #user{
+       font-size: 18px;
+       border: 1px solid white;
+       padding: 10px;
+       border-radius: 50px;
+       display: none;
+   }
+
+    
+   @media screen and (max-width:600px) {
+          #user{
+             display: flex;
+             margin-right: 20px;
+        }
+       .link{
+        display: none;
+       }
+
+       .hero_conatainer{
+         height: 80vh;
+       }
+   }
+
+    .hero_text{
+        height: 50%;
+        border: 1px solid gray;
+    }
+
+     .image_logo img{
+       width:280px;
+       height: 80px;
+        margin-left:40%;
+        margin-top: 2%;
+     }
+
+     .hero_p{
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 20%;
+        color: white;
+       font-weight: 300px;
+       font-size: 30px;
+       text-transform: capitalize;
+     }
