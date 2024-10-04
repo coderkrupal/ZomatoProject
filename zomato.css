@@ -42,20 +42,6 @@
        display: none;
    }
 
-    
-   @media screen and (max-width:600px) {
-          #user{
-             display: flex;
-             margin-right: 20px;
-        }
-       .link{
-        display: none;
-       }
-
-       .hero_conatainer{
-         height: 80vh;
-       }
-   }
 
     .hero_text{
         height: 50%;
@@ -131,3 +117,111 @@
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
       }
+
+
+       .article_image_container{
+         height: 25%;
+         /* border: 1px solid red; */
+         margin-top: 50px;
+         display: grid;
+         grid-template-columns:repeat(3,1fr);
+         gap: 20px;
+         row-gap: 30px;
+         
+       }
+
+       .card1 a{
+           width:30%;
+           border: 1px solid gray;
+       }
+       .card1 .personal_image{
+        width:362px;
+        height:150px;
+        margin-top: 10px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+       }
+
+      a{
+          text-decoration: none;        
+       }
+
+       .card_text{
+           font-size: 20px;
+           text-transform: capitalize;
+           margin-left: 10px;
+           color: black;
+       }
+
+       .card_inside_text{
+        font-size: 15px;
+         text-transform: capitalize;
+         margin-left: 10px;
+         color: black;
+         font-weight: 300;
+       }
+
+
+       .card2 .personal_image{
+        width:362px;
+        height:150px;
+        margin-top: 10px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+       }
+
+       .card3 .personal_image{
+        width:362px;
+        height:150px;
+        margin-top: 10px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+       }
+
+
+       /* media screen */
+
+       @media screen and (max-width:600px) {
+        #user{
+           display: flex;
+           margin-right: 20px;
+      }
+     .link{
+      display: none;
+     }
+
+     .hero_conatainer{
+       height: 80vh;
+     }
+
+     .hero_p{
+      width:75%;
+      margin-right: 40px;
+     }
+
+      .image_logo img{
+          margin-left:100px;
+          margin-top: 60px;
+          width: 200px;
+          height: 50px;
+      }
+
+     .input{
+      width:40%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top:30px;
+     }
+
+     #user_icon2{
+      position: absolute;
+      margin-left: 10px;
+     }
+  
+       .my_input{
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+       }
+
+ }
