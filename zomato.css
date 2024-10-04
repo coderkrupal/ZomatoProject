@@ -59,7 +59,7 @@
 
     .hero_text{
         height: 50%;
-        border: 1px solid gray;
+        
     }
 
      .image_logo img{
@@ -78,3 +78,56 @@
        font-size: 30px;
        text-transform: capitalize;
      }
+
+.input{
+   width: 900px;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin-left: 150px;
+   margin-top: 20px;
+}
+
+      .my_input{
+         width: 200px;
+        height: 60px;
+        text-align: center;
+        margin-left: 10px;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+       border-top-left-radius: 10px;
+       border-bottom-left-radius: 10px;
+      }
+
+        #user_icon2{
+            position: absolute;
+            left: 29%;
+            font-size: 20px;
+            font-weight: 300px;
+            color: gray;
+        }
+
+        #user_icon3{
+          position: absolute;
+          left:37%;
+          font-size: 20px;
+          font-weight: 300px;
+          color: gray;
+        }
+
+      .my_second_input{
+         width: 700px;
+         height: 60px;
+         border-left: 1px solid white;
+         border-right: 1px solid white;
+         border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-bottom: 1px solid white;
+        text-align: center;  
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
