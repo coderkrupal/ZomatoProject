@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: "Poppins";
 }
+
+body{
+    overflow-x: hidden;
+}
  
 .hero_conatainer{
      background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
@@ -140,6 +144,7 @@
         margin-top: 10px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+       transition: transform 0.25s linear;
        }
 
       a{
@@ -168,6 +173,7 @@
         margin-top: 10px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        transition: transform 0.25s linear;
        }
 
        .card3 .personal_image{
@@ -176,12 +182,149 @@
         margin-top: 10px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        transition: transform 0.25s linear;
        }
+
+
+       .card1 .personal_image:hover{
+             transform: scale(0.9);
+        }
+
+
+        .card2 .personal_image:hover{
+          transform: scale(0.9);
+     }
+
+     .card3 .personal_image:hover{
+      transform: scale(0.9);
+ }
+
+
+     .collection_container{
+         height:40%;
+         margin-top:50px;
+         position: relative;
+     }
+
+      .collection_header p{
+        font-size: 40px;
+           margin-left: 10px;
+           font-weight: 300px;
+           text-transform: capitalize;
+      }
+
+      .collection_text{
+         display: flex;
+         justify-content: space-between;
+      }
+
+       .upper{
+          margin-left: 10px;
+          text-transform: capitalize;
+          color: gray;
+          font-weight:600px;
+       }
+
+       .lower{
+        text-transform: capitalize;
+        color: red;
+        font-weight:600px;
+        margin-right: 20px;
+       }
+
+
+         .collection_card{
+            width:98%;
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+         }
+
+         .collection_card1{
+          width:23%;
+          padding-left: 20px;
+       }
+
+
+          
+         .collection_card1 img{
+          width: 250px;
+          height: 300px;
+          opacity:0.9;
+          border-radius: 10px;
+         }
+
+         .collection_text_part{
+            position: absolute;
+            top:85%;
+            text-transform: capitalize;
+            font-weight: 700;
+            color: rgb(32, 31, 31);
+            margin-left: 20px;
+            font-weight: 400;
+         }
+
+        .collection_text_part2{
+          position: absolute;
+          top:93%;
+          text-transform: capitalize;
+          font-weight: 700;
+          color: rgb(32, 31, 31);
+          margin-left: 20px;
+          font-weight: 400;
+        }
+
+        .collection_card2{
+          width:23%;
+          padding-left: 20px;
+       }
+
+       .collection_card2 img{
+        width: 250px;
+        height: 300px;
+        opacity:0.9;
+        border-radius: 10px;
+       }
+
+
+
+       .collection_card3{
+        width:23%;
+     
+        padding-left: 20px;
+     }
+
+     .collection_card3 img{
+      width: 250px;
+      height: 300px;
+      opacity:0.9;
+      border-radius: 10px;
+     }
+
+
+     .collection_card4{
+      width:23%;
+     
+      padding-left: 20px;
+   }
+
+   .collection_card4 img{
+    width: 250px;
+    height: 300px;
+    opacity:0.9;
+    border-radius: 10px;
+   }
+
+
 
 
        /* media screen */
 
-       @media screen and (max-width:600px) {
+       @media screen and (max-width:600px){
+         html,body{
+            overflow-x: hidden;
+        }
+         
         #user{
            display: flex;
            margin-right: 20px;
@@ -224,4 +367,77 @@
           border-bottom-left-radius: 0px;
        }
 
+       .article_image_container{
+        height: 25%;
+        /* border: 1px solid red; */
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        gap: 20px;
+        row-gap: 30px;
+       
+      }
+
+    
+      .collection_card{
+         width:100%;
+         margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+      }
+ 
+      .collection_card1 img{
+         width: 150px;
+         height: 200px;
+         opacity:0.9;
+         border-radius: 10px;
+        }
+      
+        .collection_card2 img{
+         width: 150px;
+         height: 200px;
+         opacity:0.9;
+         border-radius: 10px;
+        }
+
+        
+        .collection_card3 img{
+         width: 150px;
+         height: 200px;
+         opacity:0.9;
+         border-radius: 10px;
+        }
+
+        .collection_card4 img{
+         width: 150px;
+         height: 200px;
+         opacity:0.9;
+         border-radius: 10px;
+        }
+
+        .collection_text_part{
+         position: absolute;
+         top:85%;
+         text-transform: capitalize;
+         font-weight: 700;
+         color: rgb(32, 31, 31);
+         margin-left: 20px;
+         font-weight: 400;
+         display: none;
+      }
+
+     .collection_text_part2{
+       position: absolute;
+       top:93%;
+       text-transform: capitalize;
+       font-weight: 700;
+       color: rgb(32, 31, 31);
+       margin-left: 20px;
+       font-weight: 400;
+       display: none;
+     }
+
  }
+
+   
